@@ -87,3 +87,5 @@ for job_application in jobs_applications:
     # closing the new tab and switching back to the original tab
     driver.close()
     driver.switch_to.window(driver.window_handles[0])
+
+driver.quit()
