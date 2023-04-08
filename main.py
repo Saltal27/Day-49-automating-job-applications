@@ -80,12 +80,5 @@ for job_application in jobs_applications:
         else:
             print("Error")
 
-        # pressing the tiny little x
-        close_button = driver.find_element(By.CSS_SELECTOR, ".artdeco-modal__dismiss")
-        close_button.click()
-
-    # closing the new tab and switching back to the original tab
-    driver.close()
-    driver.switch_to.window(driver.window_handles[0])
 
 driver.quit()
